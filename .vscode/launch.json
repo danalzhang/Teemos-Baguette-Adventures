@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "game",
+            "request": "launch",
+            "mainClass": "main.game",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "game",
+            "request": "launch",
+            "mainClass": "main.game",
+            "projectName": "Teemo's Baguette Adventures"
+        },
+        {
+            "name": "React App",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "React Unit Tests (create-react-app)",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
+            "args": [
+                "test",
+                "--runInBand",
+                "--no-cache",
+                "--env=jsdom"
+            ],
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {},
+        {
+            "program": "${workspaceFolder}\\index.js"
+        },
+        {
+            "name": "Node Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--inspect-brk",
+                "${workspaceRoot}/node_modules/.bin/jest",
+                "--runInBand"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
+        }
+    ]
+}
